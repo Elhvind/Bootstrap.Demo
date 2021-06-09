@@ -1,11 +1,12 @@
 // Compile selected components
-// import 'bootstrap/scss/bootstrap.scss';
+import './styles/bootstrap-best/application.scss';
 
 // Compile bundled
-import 'bootstrap/scss/bootstrap.scss';
+// import './styles/bootstrap-ok/application.scss';
 
 // Precompiled
-// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css';
+// import './styles/bootstrap-bad/application.scss';
 
 // Import polyfills
 import 'core-js/stable';
