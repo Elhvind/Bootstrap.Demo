@@ -3,7 +3,12 @@
 
 ## Bootstap setup
 - Compile selected components
+  - Overridable variables
+  - Unlocks mixins
+  - Unlocks functions
+  - Easy removal of components
 - Compile bundled
+  - Overridable variables
 - Precompiled
 
 ## Naming convention
@@ -23,3 +28,7 @@
 
 ## Libraries
  - [BootstrapVUE](https://bootstrap-vue.org/)
+
+## CSS Custom Properties
+- [W3S](https://www.w3schools.com/css/css3_variables.asp)
+- [Demo](https://googlechrome.github.io/samples/css-custom-properties/)
