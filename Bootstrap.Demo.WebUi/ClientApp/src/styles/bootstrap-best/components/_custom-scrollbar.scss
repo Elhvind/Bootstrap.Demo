@@ -1,5 +1,5 @@
 ﻿.custom-scrollbar {
-    @include custom-scrollbar-size(6px, $border-radius);
+    @include custom-scrollbar-size(8px, $border-radius);
 
     &::-webkit-scrollbar {
         &-track {
@@ -21,11 +21,11 @@
 }
 
 .custom-scrollbar--sm {
-    @include custom-scrollbar-size(3px, $border-radius-sm);
+    @include custom-scrollbar-size(4px, $border-radius-sm);
 }
 
 .custom-scrollbar--lg {
-    @include custom-scrollbar-size(8px, $border-radius-lg);
+    @include custom-scrollbar-size(12px, $border-radius-lg);
 }
 
 .custom-scrollbar-hidden {
