@@ -20,3 +20,6 @@
 ## Dokumentation
  - [Bootstrap](https://getbootstrap.com/)
  - [Material Design](https://material.io/design)
+
+## Libraries
+ - [BootstrapVUE](https://bootstrap-vue.org/)
