@@ -4,12 +4,17 @@
 ## Bootstap setup
 - Compile selected components
   - Overridable variables
+  - Can use all variables in custom styling
   - Unlocks mixins
   - Unlocks functions
   - Easy removal of components
 - Compile bundled
   - Overridable variables
+  - Can only use variables declared in custom variables
 - Precompiled
+  - Can not change BS
+  - Can only alter BS classes using custom styling
+    - Hard to maintain support for all component states
 
 ## Naming convention
 - [BEM](http://getbem.com/naming/)
