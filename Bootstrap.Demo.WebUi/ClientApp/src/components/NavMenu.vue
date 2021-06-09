@@ -2,7 +2,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand">Vue JS Template for .NET 5</a>
+                <a class="navbar-brand">Bootstrap Demo</a>
                 <button class="navbar-toggler"
                         type="button"
                         data-toggle="collapse"
@@ -16,7 +16,6 @@
                     <ul class="navbar-nav flex-grow">
                         <li class="nav-item">
                             <router-link :to="{ name: 'Home' }" class="nav-link text-dark">Home</router-link>
-                           
                         </li>
                         <li class="nav-item">
                             <router-link :to="{ name: 'Counter' }" class="nav-link text-dark">Counter</router-link>
@@ -30,7 +29,6 @@
         </nav>
     </header>
 </template>
-
 
 <style>
     a.navbar-brand {
@@ -55,20 +53,19 @@
 </style>
 <script>
     export default {
-        name: "NavMenu",
+        name: 'NavMenu',
         data() {
             return {
                 isExpanded: false
-            }
+            };
         },
         methods: {
             collapse() {
                 this.isExpanded = false;
             },
-
             toggle() {
                 this.isExpanded = !this.isExpanded;
             }
         }
-    }
+    };
 </script>
