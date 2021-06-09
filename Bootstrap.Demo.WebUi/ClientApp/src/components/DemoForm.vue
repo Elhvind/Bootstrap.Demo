@@ -9,6 +9,7 @@
                               v-model="form.email"
                               type="email"
                               placeholder="Enter email"
+                              :state="state"
                               required></b-form-input>
             </b-form-group>
 
@@ -16,6 +17,7 @@
                 <b-form-input id="input-2"
                               v-model="form.name"
                               placeholder="Enter name"
+                              :state="state"
                               required></b-form-input>
             </b-form-group>
 
@@ -23,20 +25,20 @@
                 <b-form-select id="input-3"
                                v-model="form.food"
                                :options="foods"
+                               :state="state"
                                required></b-form-select>
             </b-form-group>
 
             <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
-                <b-form-checkbox-group v-model="form.checked"
-                                       id="checkboxes-4"
-                                       :aria-describedby="ariaDescribedby">
-                    <b-form-checkbox value="me">Check me out</b-form-checkbox>
-                    <b-form-checkbox value="that">Check that out</b-form-checkbox>
-                </b-form-checkbox-group>
+                <b-form-radio-group id="form-state-radios" v-model="state" :aria-describedby="ariaDescribedby" name="form-state-radios">
+                    <b-form-radio :value="null">Null</b-form-radio>
+                    <b-form-radio :value="false">False</b-form-radio>
+                    <b-form-radio :value="true">True</b-form-radio>
+                </b-form-radio-group>
             </b-form-group>
 
             <div class="text-right">
-                <b-button type="reset" variant="link" class="mr-3">Reset</b-button>
+                <b-button type="reset" variant="outline-primary" class="mr-3">Reset</b-button>
                 <b-button type="submit" variant="primary">Submit</b-button>
             </div>
         </b-form>
@@ -63,7 +65,8 @@
                     'Tomatoes',
                     'Corn'
                 ],
-                show: true
+                show: true,
+                state: null
             };
         },
         methods: {
@@ -80,6 +83,7 @@
                 this.form.checked = [];
                 // Trick to reset/clear native browser form validation state
                 this.show = false;
+                this.state = null;
                 this.$nextTick(() => {
                     this.show = true;
                 });

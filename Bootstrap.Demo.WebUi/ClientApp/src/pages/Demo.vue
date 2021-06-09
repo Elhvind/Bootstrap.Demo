@@ -1,13 +1,25 @@
 <template>
     <div>
-        <header class="d-flex align-items-center">
-            <h1>Heading 1</h1>
-
-        </header>
+        <h1>Demo Page</h1>
 
         <hr class="border-secondary" />
 
-        <h2>Heading 2</h2>
+        <h2>Demo Modal</h2>
+        <demo-modal></demo-modal>
+
+        <hr class="border-secondary" />
+
+        <h2>Demo Form</h2>
+        <demo-form></demo-form>
+
+        <hr class="border-secondary" />
+
+        <h2>Demo Table 2</h2>
+        <demo-table></demo-table>
+
+        <hr class="border-secondary" />
+
+        <h2>Buttons</h2>
 
         <div class="d-flex">
             <b-button-toolbar key-nav aria-label="Toolbar with button groups" class="align-items-center mx-auto mb-3">
@@ -33,27 +45,20 @@
             </b-button-toolbar>
         </div>
 
-        <hr class="border-secondary" />
-
-        <h2>Heading 2</h2>
-        <demo-form></demo-form>
-
-        <hr class="border-secondary" />
-
-        <h2>Heading 2</h2>
-        <weather-forecast></weather-forecast>
     </div>
 </template>
 
 <script>
-    import WeatherForecast from '@/components/WeatherForecast';
     import DemoForm from '@/components/DemoForm';
+    import DemoTable from '@/components/DemoTable';
+    import DemoModal from '@/components/DemoModal';
 
     export default {
         name: 'Demo',
         components: {
-            'weather-forecast': WeatherForecast,
-            'demo-form': DemoForm
+            'demo-form': DemoForm,
+            'demo-table': DemoTable,
+            'demo-modal': DemoModal
         },
         data() {
             return {
