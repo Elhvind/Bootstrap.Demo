@@ -34,5 +34,17 @@ namespace Bootstrap.Demo.WebUi.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("{date}")]
+        public WeatherForecast Get(DateTime date)
+        {
+            var rng = new Random();
+            return new WeatherForecast
+            {
+                Date = date,
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            };
+        }
     }
 }

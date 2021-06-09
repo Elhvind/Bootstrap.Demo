@@ -24,6 +24,14 @@ const routes = [
         meta: {
             title: 'Weather forecast'
         }
+    },
+    {
+        path: '/Demo',
+        name: 'Demo',
+        component: () => import('../pages/Demo.vue'),
+        meta: {
+            title: 'Demo page'
+        }
     }
 ];
 
@@ -31,8 +39,8 @@ const router = new VueRouter({
     mode: 'history',
     // base: process.env.BASE_URL,
     routes,
-    linkActiveClass: 'active',
-    linkExactActiveClass: 'active-exact'
+    linkActiveClass: 'active-child',
+    linkExactActiveClass: 'active'
 });
 
 router.beforeEach((to, from, next) => {

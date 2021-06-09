@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav-menu></nav-menu>
-        <b-container>
+        <b-container class="py-3">
             <router-view />
         </b-container>
     </div>
@@ -17,6 +17,3 @@
         }
     };
 </script>
-
-<style>
-</style>
