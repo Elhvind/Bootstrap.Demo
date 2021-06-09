@@ -1,6 +1,6 @@
 ﻿<template>
     <header>
-        <b-navbar toggleable="md" type="dark" variant="secondary" class="shadow">
+        <b-navbar toggleable="md" type="light" variant="light" class="shadow border-bottom border-primary">
             <b-container>
                 <b-navbar-brand :to="{ name: 'Home' }">
                     <b-icon icon="bootstrap-fill" class="text-primary"></b-icon>
@@ -12,6 +12,7 @@
                         <b-nav-item :to="{ name: 'Home' }">Home</b-nav-item>
                         <b-nav-item :to="{ name: 'Counter' }">Counter</b-nav-item>
                         <b-nav-item :to="{ name: 'Demo' }">Demo Page</b-nav-item>
+                        <b-nav-item :to="{ name: 'DemoList' }">Demo List</b-nav-item>
                     </b-navbar-nav>
                     <b-navbar-nav class="ml-auto">
                         <b-nav-form>

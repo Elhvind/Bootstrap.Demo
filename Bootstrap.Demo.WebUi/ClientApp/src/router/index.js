@@ -32,6 +32,14 @@ const routes = [
         meta: {
             title: 'Demo page'
         }
+    },
+    {
+        path: '/DemoList',
+        name: 'DemoList',
+        component: () => import('../pages/DemoList.vue'),
+        meta: {
+            title: 'Demo list page'
+        }
     }
 ];
 

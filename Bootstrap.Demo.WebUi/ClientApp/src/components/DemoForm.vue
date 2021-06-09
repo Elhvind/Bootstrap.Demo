@@ -4,7 +4,8 @@
             <b-form-group id="input-group-1"
                           label="Email address:"
                           label-for="input-1"
-                          description="We'll never share your email with anyone else.">
+                          description="We'll never share your email with anyone else."
+                          label-cols-lg="3">
                 <b-form-input id="input-1"
                               v-model="form.email"
                               type="email"
@@ -13,7 +14,7 @@
                               required></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+            <b-form-group id="input-group-2" label="Your Name:" label-for="input-2" label-cols-lg="3">
                 <b-form-input id="input-2"
                               v-model="form.name"
                               placeholder="Enter name"
@@ -21,7 +22,7 @@
                               required></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-3" label="Food:" label-for="input-3">
+            <b-form-group id="input-group-3" label="Food:" label-for="input-3" label-cols-lg="3">
                 <b-form-select id="input-3"
                                v-model="form.food"
                                :options="foods"
@@ -29,8 +30,8 @@
                                required></b-form-select>
             </b-form-group>
 
-            <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
-                <b-form-radio-group id="form-state-radios" v-model="state" :aria-describedby="ariaDescribedby" name="form-state-radios">
+            <b-form-group id="input-group-4" label="State:" v-slot="{ ariaDescribedby }" label-cols-lg="3">
+                <b-form-radio-group id="form-state-radios" label="State:" v-model="state" :aria-describedby="ariaDescribedby" name="form-state-radios" class="my-2">
                     <b-form-radio :value="null">Null</b-form-radio>
                     <b-form-radio :value="false">False</b-form-radio>
                     <b-form-radio :value="true">True</b-form-radio>

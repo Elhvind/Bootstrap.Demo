@@ -1,9 +1,7 @@
 <template>
     <div>
         <nav-menu></nav-menu>
-        <b-container class="py-3">
-            <router-view />
-        </b-container>
+        <router-view />
     </div>
 </template>
 

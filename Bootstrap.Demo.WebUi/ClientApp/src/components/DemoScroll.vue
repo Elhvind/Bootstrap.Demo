@@ -3,27 +3,18 @@
         <b-container fluid class="mb-3">
             <b-row>
                 <b-col md="6">
-                    <b-row class="mb-1">
-                        <b-col sm="3">Variant</b-col>
-                        <b-col>
-                            <b-form-select v-model="variant" :options="variants"></b-form-select>
-                        </b-col>
-                    </b-row>
-                    <b-row class="mb-1">
-                        <b-col sm="3">Size</b-col>
-                        <b-col>
-                            <b-form-select v-model="size" :options="sizes"></b-form-select>
-                        </b-col>
-                    </b-row>
-                    <b-row class="mb-1">
-                        <b-col sm="3">Word count</b-col>
-                        <b-col>
-                            <b-form-input v-model="wordCount" type="number"></b-form-input>
-                        </b-col>
-                    </b-row>
+                    <b-form-group label="Variant:" label-size="sm" label-for="scroll-variant" label-cols-sm="3">
+                        <b-form-select id="scroll-variant" size="sm" v-model="variant" :options="variants"></b-form-select>
+                    </b-form-group>
+                    <b-form-group label="Size:" label-size="sm" label-for="scroll-size" label-cols-sm="3">
+                        <b-form-select id="scroll-size" size="sm" v-model="size" :options="sizes"></b-form-select>
+                    </b-form-group>
+                    <b-form-group label="Word count:" label-size="sm" label-for="scroll-word-count" label-cols-sm="3">
+                        <b-form-input id="scroll-word-count" size="sm" v-model="wordCount" type="number"></b-form-input>
+                    </b-form-group>
                 </b-col>
                 <b-col>
-                    <div v-bind:class="cssClasses" style="max-height: 150px; overflow-y: scroll;">
+                    <div v-bind:class="cssClasses" style="max-height: 148px; overflow-y: scroll;">
                         {{ text }}
                     </div>
                 </b-col>

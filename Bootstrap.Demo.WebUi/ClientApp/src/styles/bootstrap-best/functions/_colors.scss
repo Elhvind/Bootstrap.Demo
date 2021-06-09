@@ -7,11 +7,3 @@
         @return color-yiq($color);
     }
 }
-
-@function opac-b-color($key) {
-    @return map-get($opac-b-colors, $key);
-}
-
-@function opac-w-color($key) {
-    @return map-get($opac-w-colors, $key);
-}

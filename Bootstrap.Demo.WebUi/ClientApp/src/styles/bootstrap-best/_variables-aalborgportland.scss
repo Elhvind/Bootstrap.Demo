@@ -52,8 +52,8 @@ $yiq-text-dark: $gray-900;
 $yiq-text-light: $white;
 
 // Theme
-$primary: #dd590a;
-$secondary: #161616;
+$primary: #A30044;
+$secondary: #353535;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;
@@ -113,8 +113,8 @@ $grid-row-columns: 6;
 // Font, line-height, and color for body text, headings, and more.
 $font-family-sans-serif: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 
-$font-size-base: 1rem;
-$font-size-lg: $font-size-base * 1.25;
+$font-size-base: .9375rem;
+$font-size-lg: 1.0625rem;
 $font-size-sm: $font-size-base * .875;
 
 $font-weight-lighter: lighter;
@@ -124,18 +124,18 @@ $font-weight-bold: 700;
 $font-weight-bolder: bolder;
 
 $font-weight-base: $font-weight-normal;
-$line-height-base: 1.5;
+$line-height-base: 1.4;
 
-$h1-font-size: $font-size-base * 3.75; // ~60px
-$h2-font-size: $font-size-base * 2.75; // ~44px
-$h3-font-size: $font-size-base * 2; // ~32px
-$h4-font-size: $font-size-base * 1.5;
+$h1-font-size: $font-size-base * 3.125; // ~50px
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.25;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 
 $headings-margin-bottom: $spacer / 2;
 $headings-font-family: 'agencyr', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
-$headings-font-weight: 500;
+$headings-font-weight: $font-weight-bold;
 $headings-line-height: 1.2;
 $headings-color: null;
 
@@ -143,45 +143,26 @@ $headings-color: null;
 // Components
 //
 // Define common padding and border radius sizes and more.
-$line-height-lg: 1.5;
-$line-height-sm: 1.5;
+$line-height-lg: 1.4;
+$line-height-sm: 1.4;
 
 $border-width: 1px;
 $border-color: $gray-300;
 
-$border-radius: .5rem;
-$border-radius-lg: 1rem;
-$border-radius-sm: .25rem;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
 
 
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
-$input-btn-padding-y: .85rem;
-$input-btn-padding-x: 1.875rem;
-$input-btn-line-height: 1;
+$input-btn-padding-y: .5625rem;
+$input-btn-padding-x: 1.5625rem;
+$input-btn-font-size: 1.125rem;
 
+$input-btn-padding-y-sm: .25rem;
+$input-btn-padding-x-sm: .5rem;
 
-$input-btn-padding-y-sm: .5rem;
-$input-btn-padding-x-sm: 1rem;
-
-$input-btn-padding-y-lg: 1rem;
-$input-btn-padding-x-lg: 2rem;
-
-
-// Buttons
-//
-// For each of Bootstrap's buttons, define text, background, and border color.
-$btn-box-shadow: 0px 4px 20px -10px rgb($black, 0.75);
-
-$btn-border-radius: 2rem;
-$btn-border-radius-lg: 3rem;
-$btn-border-radius-sm: 1rem;
-
-// Forms
-$input-border-radius: $btn-border-radius;
-$input-border-radius-lg: $btn-border-radius-lg;
-$input-border-radius-sm: $btn-border-radius-sm;
-
-// Custom Forms
-$custom-select-border-radius: $btn-border-radius;
+$input-btn-padding-y-lg: .875rem;
+$input-btn-padding-x-lg: 1.25rem;
