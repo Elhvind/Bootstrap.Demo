@@ -1,17 +1,1 @@
-﻿@function on-theme-color($key: 'primary') {
-    @if(map-has-key($on-theme-colors, $key)) {
-        @return map-get($on-theme-colors, $key);
-    }
-    @else {
-        $color: map-get($theme-colors, $key);
-        @return color-yiq($color);
-    }
-}
-
-@function opac-b-color($key) {
-    @return map-get($opac-b-colors, $key);
-}
-
-@function opac-w-color($key) {
-    @return map-get($opac-w-colors, $key);
-}
+﻿@import "functions/_colors.scss";

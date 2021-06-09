@@ -23,9 +23,6 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\plugins\" />
-    <Folder Include="ClientApp\src\styles\bootstrap-best\functions\" />
-    <Folder Include="ClientApp\src\styles\bootstrap-best\mixins\" />
-    <Folder Include="ClientApp\src\styles\bootstrap-best\components\" />
     <Folder Include="ClientApp\src\styles\bootstrap-best\utilities\" />
     <Folder Include="ClientApp\src\styles\bootstrap-ok\components\" />
     <Folder Include="ClientApp\src\styles\bootstrap-ok\mixins\" />
