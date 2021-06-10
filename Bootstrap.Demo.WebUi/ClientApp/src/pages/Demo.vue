@@ -10,6 +10,10 @@
 
                 <hr class="my-5 border-secondary" />
 
+                <demo-box></demo-box>
+
+                <hr class="my-5 border-secondary" />
+
                 <h2>Demo Modal</h2>
                 <demo-modal></demo-modal>
 
@@ -74,6 +78,7 @@
     import DemoTable from '@/components/DemoTable';
     import DemoModal from '@/components/DemoModal';
     import DemoScroll from '@/components/DemoScroll';
+    import DemoBox from '@/components/DemoBox';
 
     export default {
         name: 'Demo',
@@ -81,7 +86,8 @@
             'demo-form': DemoForm,
             'demo-table': DemoTable,
             'demo-modal': DemoModal,
-            'demo-scroll': DemoScroll
+            'demo-scroll': DemoScroll,
+            'demo-box': DemoBox
         },
         data() {
             return {
